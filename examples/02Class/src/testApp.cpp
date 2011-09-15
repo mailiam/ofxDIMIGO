@@ -2,10 +2,10 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	ofSetVerticalSync(true); //프레임속도를 60에 고정
+	ofSetVerticalSync(true); //프레임속도를 60에 고정, 스크린의 재생 속도와 맞춘다.
 	
 	
-	//처음 취이 지정
+	//처음 위치 지정
 	bob.pos.x = 200;
 	bob.pos.y = 200;
 
@@ -13,12 +13,15 @@ void testApp::setup(){
 
 //--------------------------------------------------------------
 void testApp::update(){
+	
+	//매 프레임마다 클래스내의 update를 실행
 	bob.update();
 	marley.update();
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
+	//bob과 marley를 그린다.
 	ofSetColor(100, 200, 0);
 	bob.draw();
 	
