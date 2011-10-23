@@ -21,5 +21,5 @@ public:
 	ofPoint cohesion(particle current);
 	
 private:
-	particle p[NUM_PARTICLES];
+	particle p[NUM_PARTICLES];				//particle 배열 [배열크기]
 };
